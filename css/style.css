@@ -203,6 +203,21 @@ a{
     transition: .3s ;
 }
 
+
+/*SECTION 2*/
+
+.hero2{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url(../img/section2.webp);
+    background-size: cover;
+    background-position: center;
+  
+}
+
+
+
 /*GALERIA*/
 
 .galeria{
@@ -214,6 +229,7 @@ a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    margin-top: 4rem;
    
 
 }
