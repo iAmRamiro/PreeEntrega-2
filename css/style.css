@@ -82,6 +82,9 @@ a{
     color: var(--blanco);
 }
 
+.mt-20{
+    margin-top: 6rem;
+}
 
 
 /*HEADER Y NAV*/
@@ -214,6 +217,147 @@ a{
     background-size: cover;
     background-position: center;
   
+}
+
+.testimonios{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.titulo-testimonio{
+    display: inline-block;
+    position: relative;
+    color: #3b7cf5;
+    font-size:  4vw;
+    padding: 6rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+}
+
+.titulo-testimonio::before{
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    background: #393939;
+}
+
+.titulo-testimonio b{
+    color: #fff;
+}
+
+.envoltorio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.envoltorio .contenedor-testimonios{
+    position: relative;
+    width: 35rem;
+    color: #fff;
+    background: #222;
+    margin: 4rem 1rem;
+    padding: 3rem 2rem;
+    border-radius: 3rem;
+    transition: 0.3s ease;
+}
+
+
+.perfil{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10%;
+    width: 100%;
+    display: block;
+}
+
+.img-box{
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+    border: 8px solid #070c0d;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.perfil h2{
+    padding: 5px 0;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+
+.envoltorio .contenedor-testimonios p{
+    margin-top: 5rem;
+    color: #fff;
+    padding: 0 8px;
+    font-size: 15px;
+    opacity: 0.8;
+
+}
+
+.envoltorio .contenedor-testimonios .left{
+    font-size: 3rem;
+    display: block;
+    text-align: left;
+    color: #3b7cf5;
+}
+
+.envoltorio .contenedor-testimonios .right{
+    font-size: 3rem;
+    display: block;
+    text-align: right;
+    color: #3b7cf5;
+}
+
+.envoltorio .contenedor-testimonios .social{
+    
+    width: 100%;
+
+}
+
+.envoltorio .contenedor-testimonios .social i{
+    font-size: 1.2em;
+    color: #fff;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.envoltorio .contenedor-testimonios .social i:hover{
+    color: #3b7cf5;
+    transition: 0.2s;
+}
+
+.envoltorio .contenedor-testimonios .perfil .img-box:hover{
+    filter: saturate(140%);
+    transform: 0.95;
 }
 
 
