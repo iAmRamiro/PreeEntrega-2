@@ -959,7 +959,7 @@ textarea{
     }
 
     .text-box h2{
-        line-height: 100px;
+        line-height: 70px;
         font-size: 70px;
         margin: 0;
         padding: 0;
@@ -968,7 +968,6 @@ textarea{
     .text-box p{
         display: flex;
         text-align: left;
-        margin-top: 80px;
         font-size: 28px;
         margin-bottom: 0;
     }
@@ -1020,11 +1019,17 @@ textarea{
 	}
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
 	.contenedor-contacto{
 		padding: 0;
 	}
 	
+    .contact-box__img{
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
 	.field{
 		width: 100vw;
 	}
