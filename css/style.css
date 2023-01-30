@@ -724,16 +724,6 @@ a{
    align-items: center;
 }
 
-@media (max-width: 1280px) {
-    .nosotros__contenido img{
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        margin-top: 8rem;
-    }
-}
-
-
 
 
 .nosotros__contenido{
@@ -772,6 +762,17 @@ a{
 
 }
 
+@media (max-width: 1280px) {
+    .nosotros__contenido img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        margin-top: 0;
+    }
+}
+
+
+
 @media (max-width: 768px) {
     .nosotros__contenido{
         grid-template-columns: 1fr;
@@ -779,13 +780,17 @@ a{
 
     .nosotros__info h2 {
         font-size: 40px;
-        margin-top: 6rem;
+        margin-top: 0;
+        text-align: center;
     }
 
     .nosotros__contenido{
-        height: 100vh;
+        height: 100%;
     }
 
+    .nosotros__info p{
+        margin-bottom: 4rem;
+    }
 }
 
 
@@ -810,104 +815,6 @@ a{
     transition: .4s;
     cursor: pointer;
 }
-
-@media (min-width: 768px) {
-     
-}
-
-
-
-/*HEROS*/
-
-@media (max-width: 768px) {
-    .hero , .hero-productos ,.hero-nosotros{
-       padding: 0 ;
-       margin: 0;
-       position: sticky;
-    }
-
-    .titulo {
-       font-size: 4rem;
-    }
-
-
-   .text-box h2{
-       font-size: 160px;
-   }
-
-   .text-box{
-       margin-left: 4rem;
-   }
-
-   .text-box a{
-       margin-bottom: 2rem;
-   }
-}
-@media (max-width: 390px) {
-    
-    .text-box__info{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-    }
-
-    .text-box h2{
-        line-height: 100px;
-        font-size: 70px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .text-box p{
-        display: flex;
-        text-align: left;
-        margin-top: 80px;
-        font-size: 28px;
-        margin-bottom: 0;
-    }
-
-    .text-box h3{
-        font-size: 18px;
-        font-weight: 500;
-        margin: 0;
-    }
-
-    .text-box{
-        margin: 0;
-    }
-
-    .text-box__informacion{
-        display: flex;
-        gap: 2rem;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 40px;
-        margin-bottom: 0;
-    }
-
-    .text-box a{
-        text-align: center;
-        width: 100%;
-        margin: .5rem;
-        padding: 7px;
-        
-    }
-
-    .titulo{
-        font-size: 3rem;
-    }
-
-    .links li a{
-        font-size: 16px;
-    }
-}
-
-
-/*BLOQUE BODEGA.HTML*/
-
-
 
 
 /*BLOQUE CONTACTO.HTML*/
@@ -1015,6 +922,94 @@ textarea{
     border: 2px solid rgba(30,85,250,0.47);
     background-color: #fff;
 }
+
+/*HEROS*/
+
+@media (max-width: 768px) {
+    .hero , .hero-productos ,.hero-nosotros , .hero-contacto{
+       padding: 0 ;
+       margin: 0;
+       position: sticky;
+    }
+
+    .titulo {
+       font-size: 4rem;
+    }
+
+
+   .text-box h2{
+       font-size: 160px;
+   }
+
+   .text-box{
+       margin-left: 4rem;
+   }
+
+   .text-box a{
+       margin-bottom: 2rem;
+   }
+}
+@media (max-width: 390px) {
+    
+    .text-box__info{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .text-box h2{
+        line-height: 100px;
+        font-size: 70px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-box p{
+        display: flex;
+        text-align: left;
+        margin-top: 80px;
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .text-box h3{
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .text-box{
+        margin: 0;
+    }
+
+    .text-box__informacion{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+    .text-box a{
+        text-align: center;
+        width: 100%;
+        margin: .5rem;
+        padding: 7px;
+        
+    }
+
+    .titulo{
+        font-size: 3rem;
+    }
+
+    .links li a{
+        font-size: 16px;
+    }
+}
+
 
 @media (max-width: 880px){
 	.contact-box{
